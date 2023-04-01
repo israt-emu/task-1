@@ -29,7 +29,7 @@ const Dashboard = (props) => {
   const [filterData, setFilterData] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("https://intense-atoll-84244.herokuapp.com/data")
+    fetch("https://data-visualization-server.onrender.com/data")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
